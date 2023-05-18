@@ -1,0 +1,888 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos&family=Reem+Kufi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background-color: #f2f2f2;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  z-index: 10000;
+}
+
+nav img {
+  height: 80px;
+  transition: transform 1s ease-out;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav .container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  transition: transform 1s ease-out;
+}
+
+#social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+nav i {
+  font-size: 35px;
+}
+nav a:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.bi-facebook:hover {
+  color: #3b5998;
+}
+.bi-twitter:hover {
+  color: #00acee;
+}
+.bi-instagram:hover {
+  color: #d62976;
+}
+.bi-telegram:hover {
+  color: #0088cc;
+}
+
+@media (max-width: 768px) {
+  nav .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 400px) {
+  nav img {
+    width: 90px;
+    height: 70px;
+  }
+  nav i {
+    font-size: 30px;
+  }
+  #social-media {
+    width: 150px;
+  }
+}
+
+/***********/
+
+#main {
+  width: 450px;
+  height: 250px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: end;
+  margin: 0 auto;
+  font-size: 40px;
+  font-family: "Genos", sans-serif;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+#main p {
+  padding-bottom: 30px;
+}
+
+#main img {
+  width: 200px;
+  height: 150px;
+  margin: 0 15px;
+}
+
+@media (max-width: 576px) {
+  #main {
+    width: 300px;
+    height: 200px;
+  }
+  #main p {
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  #main img {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  #main {
+    width: 250px;
+    height: 150px;
+  }
+  #main p {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  #main img {
+    width: 100px;
+    height: 70px;
+  }
+}
+
+/**************/
+
+.line {
+  width: 80%;
+  height: 5px;
+  background-color: #0088cc;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/***************/
+
+#trend {
+  background-color: white;
+  width: 80%;
+  height: 500px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+#khader {
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/الشهداء/خضر\ عدنان.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#khaderA {
+  width: 60%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+#khader h1 {
+  font-family: "Vazirmatn", sans-serif;
+  padding-bottom: 50px;
+  position: absolute;
+  bottom: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#khader h1:hover {
+  text-decoration: underline;
+}
+
+#khader:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+#others {
+  padding: 20px;
+  width: 37%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#others .imga {
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+}
+
+#others img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+#others img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#others .h2a {
+  font-size: 12px;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+#others h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#others div {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#others a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  cursor: auto;
+}
+
+@media (min-width: 2000px) {
+  #trend {
+    height: 800px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #trend {
+    display: block;
+    height: 800px;
+  }
+  #khaderA {
+    width: 100%;
+    height: 500px;
+  }
+  #others {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #others div {
+    width: 30%;
+    height: 250px;
+    flex-direction: column-reverse;
+  }
+  #others .imga {
+    width: 100%;
+    height: 48%;
+  }
+  #others .h2a {
+    height: 50%;
+    width: 100%;
+  }
+  #others h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  #trend {
+    height: 970px;
+  }
+  #khader {
+    background-position: -250px 0;
+  }
+  #others {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+  }
+  #others div {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+  }
+  #others .imga {
+    height: 100%;
+    width: 50%;
+  }
+  #others .h2a {
+    position: relative;
+    width: 45%;
+  }
+  #others h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  #trend {
+    height: 830px;
+  }
+  #others {
+    height: 300px;
+  }
+  #khader h1 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  #others h2 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  #others h2 {
+    font-size: 10px;
+  }
+  #khader h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/****************/
+
+.newsBox {
+  width: 80%;
+  height: 900px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  margin-bottom: 45px;
+}
+
+.subject {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.subjectLine {
+  width: 8px;
+  height: 50px;
+  background-color: red;
+  margin-left: 10px;
+}
+
+.news {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 800px;
+}
+
+.new {
+  width: 30%;
+  height: 350px;
+  margin-top: 30px;
+}
+
+.new .IMG {
+  width: 100%;
+  height: 60%;
+  display: block;
+  overflow: hidden;
+}
+
+.new img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.new img:hover {
+  transform: scale(1.05);
+}
+
+.new .H2 {
+  display: block;
+  width: 100%;
+  height: 40%;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: auto;
+  color: black;
+}
+
+.new h2:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (min-width: 2000px) {
+  .newsBox {
+    height: 1500px;
+  }
+  .news {
+    height: 1400px;
+  }
+  .new {
+    height: 700px;
+  }
+  .new h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .newsBox {
+    height: 1200px;
+  }
+  .new {
+    width: 40%;
+  }
+  .news {
+    justify-content: space-around;
+  }
+  .new h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .newsBox {
+    height: 1000px;
+  }
+  .new {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 120px;
+  }
+  .new .IMG {
+    height: 100%;
+    width: 40%;
+  }
+  .new .H2 {
+    padding: 0;
+    display: block;
+    width: 55%;
+    height: 100%;
+    position: relative;
+  }
+  .new h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .newsBox {
+    height: 750px;
+  }
+  .new h2 {
+    font-size: 12px;
+  }
+  .news {
+    height: 400px;
+  }
+  .new {
+    height: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .new h2 {
+    font-size: 10px;
+  }
+}
+
+/**************************/
+
+#randomBox {
+  width: 80%;
+  height: 830px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  margin-bottom: 45px;
+}
+
+#main-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 700px;
+  margin-top: 30px;
+}
+
+#main-container a {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+#main-container a div {
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-container h1 {
+  position: absolute;
+  padding: 20px;
+  margin: 0 auto;
+  bottom: 0;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#main-left-bottom-container h1 {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#main-container h1:hover {
+  text-decoration: underline;
+}
+
+#main-container a div:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+#main-left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 74%;
+  height: 100%;
+}
+
+#main-left-top-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 74%;
+}
+
+#main-left-top-left-container {
+  /* taken */
+  width: 33%;
+  height: 100%;
+}
+#main-left-top-left-container div {
+  background-image: url(/img/منوعات/volcano.jpg);
+  /* background-position: center center; */
+}
+
+#main-left-top-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 65%;
+  height: 100%;
+}
+
+#main-left-top-right-top-container {
+  /* taken */
+  width: 100%;
+  height: 33%;
+}
+#main-left-top-right-top-container div {
+  background-image: url(/img/منوعات/tokyo.jpg);
+}
+
+#main-left-top-right-bottom-container {
+  /* taken */
+  width: 100%;
+  height: 65%;
+}
+#main-left-top-right-bottom-container div {
+  background-image: url(/img/منوعات/goldVSdolar.jpg);
+}
+
+#main-left-bottom-container {
+  /* taken */
+  width: 100%;
+  height: 24%;
+}
+#main-left-bottom-container div {
+  background-image: url(/img/منوعات/sea.jpg);
+  background-position: left bottom;
+}
+
+#main-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24%;
+  height: 100%;
+}
+
+#main-right-top-container {
+  /* taken */
+  width: 100%;
+  height: 49%;
+}
+#main-right-top-container div {
+  background-image: url(/img/منوعات/bitcoin.jfif);
+  background-position: bottom right;
+}
+
+#main-right-bottom-container {
+  /* taken */
+  width: 100%;
+  height: 49%;
+}
+#main-right-bottom-container div {
+  background-image: url(/img/منوعات/bus.webp);
+  background-position: center center;
+}
+
+@media (max-width: 1200px) {
+  #main-container h1 {
+    font-size: 22px;
+  }
+}
+
+#randomBox700 {
+  display: none;
+}
+@media (max-width: 700px) {
+  #randomBox {
+    display: none;
+  }
+  #randomBox700 {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  #randomBox700 h2 {
+    margin-top: 0;
+  }
+}
+
+/****************************/
+
+#videos {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  height: 400px;
+  padding-top: 50px;
+  margin-bottom: 45px;
+  background-image: url(/img/videos.jpg);
+  background-attachment: fixed;
+}
+
+#videos iframe {
+  width: 45%;
+  height: 300px;
+  border: 3px solid white;
+}
+
+@media (max-width: 1000px) {
+  #videos {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 750px;
+    padding-bottom: 50px;
+  }
+  #videos iframe {
+    width: 80%;
+  }
+}
+
+/*********************************/
+
+#contact {
+  width: 80%;
+  height: 950px;
+  background-color: white;
+  margin: 50px auto 0 auto;
+  padding: 50px;
+  position: relative;
+}
+
+#contact h3 {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}
+
+#map {
+  width: calc(100% - 100px);
+  height: 450px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 30px;
+}
+
+#map iframe {
+  width: 100%;
+  height: 450px;
+}
+
+#contactInfo {
+  margin-top: 520px;
+  height: 250px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+#infoSection {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.info {
+  text-align: end;
+}
+
+.info i,
+.info label {
+  font-size: 25px;
+  align-items: end;
+  color: #0088cc;
+}
+
+.info i {
+  margin-left: 5px;
+}
+
+.info p {
+  padding-right: 30px;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+#form {
+  width: 60%;
+  height: 100%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#form div {
+  text-align: end;
+  width: 100%;
+}
+
+#form label {
+  font-size: 20px;
+}
+
+input {
+  font-family: "Vazirmatn", sans-serif;
+}
+
+#form input {
+  font-size: 15px;
+  margin-top: 10px;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  text-align: end;
+}
+
+#submit {
+  margin-top: 20px;
+  border: none;
+  background-color: #0088cc;
+  color: white;
+  font-size: 25px;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  #contact {
+    height: 1300px;
+  }
+  #contactInfo {
+    height: 600px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #infoSection {
+    width: 100%;
+    height: 45%;
+    align-items: center;
+  }
+  #form {
+    width: 100%;
+    height: 50%;
+  }
+  #map {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  #contact {
+    padding: 10px;
+    height: 1260px;
+  }
+  #map {
+    width: 80%;
+  }
+}
+
+/******************************/
+
+footer {
+  font-size: 20px;
+  margin: 20px auto 0 auto;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+footer i {
+  margin-right: 5px;
+}
