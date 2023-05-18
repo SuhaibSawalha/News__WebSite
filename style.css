@@ -597,7 +597,7 @@ nav a:hover {
   height: 100%;
 }
 #main-left-top-left-container div {
-  background-image: url(/img/منوعات/volcano.jpg);
+  background-image: url(./img/منوعات/volcano.jpg);
   /* background-position: center center; */
 }
 
@@ -615,7 +615,7 @@ nav a:hover {
   height: 33%;
 }
 #main-left-top-right-top-container div {
-  background-image: url(/img/منوعات/tokyo.jpg);
+  background-image: url(./img/منوعات/tokyo.jpg);
 }
 
 #main-left-top-right-bottom-container {
@@ -624,7 +624,7 @@ nav a:hover {
   height: 65%;
 }
 #main-left-top-right-bottom-container div {
-  background-image: url(/img/منوعات/goldVSdolar.jpg);
+  background-image: url(./img/منوعات/goldVSdolar.jpg);
 }
 
 #main-left-bottom-container {
@@ -633,7 +633,7 @@ nav a:hover {
   height: 24%;
 }
 #main-left-bottom-container div {
-  background-image: url(/img/منوعات/sea.jpg);
+  background-image: url(./img/منوعات/sea.jpg);
   background-position: left bottom;
 }
 
@@ -651,7 +651,7 @@ nav a:hover {
   height: 49%;
 }
 #main-right-top-container div {
-  background-image: url(/img/منوعات/bitcoin.jfif);
+  background-image: url(./img/منوعات/bitcoin.jfif);
   background-position: bottom right;
 }
 
@@ -661,7 +661,7 @@ nav a:hover {
   height: 49%;
 }
 #main-right-bottom-container div {
-  background-image: url(/img/منوعات/bus.webp);
+  background-image: url(./img/منوعات/bus.webp);
   background-position: center center;
 }
 
@@ -700,7 +700,7 @@ nav a:hover {
   height: 400px;
   padding-top: 50px;
   margin-bottom: 45px;
-  background-image: url(/img/videos.jpg);
+  background-image: url(./img/videos.jpg);
   background-attachment: fixed;
 }
 
